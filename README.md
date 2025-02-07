@@ -1,3 +1,6 @@
+# 0. 模型和数据
+需要注意的是，用到了一个较大的pretrain开源模型和开源数据，所以本仓库难以上传展示。具体见Evolutionary Trigger Detection and Lightweight Model Repair Based Backdoor Defense实验细节。https://arxiv.org/abs/2407.05396
+
 # 1. CETF触发器搜索
 
 以下两个文件均用于触发器搜索，分别针对不同的模型。运行时可以修改`batch size`参数和第142行的程序终止条件，以决定演示时一次性运行多少个图像。
