@@ -98,7 +98,7 @@ def draw_min_rect_rectangle(image,mask,i,j):
     x_max = x_coords.max()
     y_min = y_coords.min()
     y_max = y_coords.max()
-    e = 50
+    e = # for dilate the rectangle, can be 0-80
     poi=[max(y_min-e,0),min(y_max+e,160-1),max(x_min-e,0),min(x_max+e,160-1)]
     cut = (img)[poi[0]:poi[1], poi[2]:poi[3]]
     plt.imsave(output_path+str(i)+"_"+str(j)+".jpg",cut.cpu().numpy())
